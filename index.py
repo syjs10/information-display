@@ -24,7 +24,7 @@ def get_school_news(school):
 def search_school_news():
     error = None
     if request.method == 'POST':
-        datas = database.searchData(request.form['keyword'])
+        datas = database.searchData(request.form['keyword'].strip())
         return render_template('newsList.html', datas=datas)
 
 if __name__ == '__main__':
