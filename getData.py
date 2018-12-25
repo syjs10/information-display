@@ -6,6 +6,6 @@ for line in f:
     scriptName = line.split()[0]
     exec('from school.'+scriptName+' import excute')
     data = excute()
-    database.insertData("dongbeidaxue",data)
+    database.insertData(scriptName,data)
 f.close()
 
