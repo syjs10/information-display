@@ -5,8 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     datas = database.getData('dongbeidaxue')
-    base_url = url_for("static", filename='')
-    return render_template('newsList.html', datas=datas, base_url=base_url);
+    return render_template('newsList.html', datas=datas);
 
 @app.route('/school/<school>')
 def get_school_news(school):
