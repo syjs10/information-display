@@ -5,3 +5,4 @@
 5. 进入项目目录 virtualenv venv
 6. pip3 install Flask
 7. sudo pip3 install pymongo
+8. mongodb
