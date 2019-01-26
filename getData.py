@@ -9,3 +9,4 @@ for line in f:
     database.insertData(scriptName,data)
 f.close()
 
+
